@@ -52,3 +52,54 @@ I worked through six hands-on Wireshark labs, each focusing on a different aspec
 During the exercises, I examined captured network traffic, followed TCP streams, investigated different protocols, and looked for signs of suspicious activity.
 
 Below are the six labs I completed and a brief description of what I did in each one.
+
+
+## 🧪 Detailed Lab Activities
+
+### Lab 1: Identify the Attacker's IP
+
+I started by examining a packet capture containing suspicious network activity. I checked the total number of packets, identified SYN packets and examined the source and destination IP addresses to determine which system was initiating the connections.
+
+I then investigated TCP conversations, checked the ports being accessed and examined TCP flags to distinguish open ports from closed ones. From the analysis, I identified the attacker, the target system and the port-scanning activity taking place.
+
+**Key finding:** Identified the attacker as `192.168.10.66`, the target as `192.168.10.20`, and recognised the activity as a port scan.
+
+### Lab 2: Follow TCP Stream 1
+
+In this exercise, I investigated a captured TCP conversation using Wireshark's Follow TCP Stream feature. I examined the communication between the client and server to reconstruct the exchanged messages.
+
+By following the stream, I was able to identify the client IP address, TCP stream number and communication details. I also examined the conversation to uncover information shared between the users, including a staff member's name and other internal details.
+
+**Key finding:** Learned how to reconstruct TCP conversations and extract useful information from network communication.
+
+### Lab 3: Follow TCP Stream, Part 2
+
+This lab involved a deeper investigation of TCP communication. I used Follow TCP Stream to examine captured traffic and uncover information that was not immediately visible in the packet list.
+
+I investigated a hidden webpage, examined an HTML comment, identified the relevant TCP stream and inspected HTTP responses. I also checked the traffic direction and HTTP status code to understand how the server responded to the client's request.
+
+**Key finding:** Successfully identified a hidden staff webpage, examined its HTTP response and located a downloaded report within the captured traffic.
+
+### Lab 4: HTTP Plain Text Credentials
+
+For this lab, I examined HTTP traffic to investigate how login information can be exposed during network communication. I identified the HTTP protocol, located POST requests and examined the login page and authentication attempts.
+
+I also inspected the packet details to understand how form data was transmitted. This helped me see why sending login credentials over an unencrypted HTTP connection creates a security risk.
+
+**Key finding:** Identified exposed login information in HTTP traffic and understood why HTTPS should be used to protect sensitive credentials.
+
+### Lab 5: Catch the Brute Force Attacker
+
+In this exercise, I investigated FTP traffic to identify a suspected brute-force attack. I examined the communication between the attacker and target system, identified the username being targeted and checked the FTP response codes.
+
+I distinguished failed login attempts from successful authentication and counted the repeated failures. This helped me understand how brute-force activity can be detected by analysing authentication patterns in network traffic.
+
+**Key finding:** Identified 24 failed login attempts, recognised FTP response codes `530` and `230`, and confirmed the activity as a brute-force attack.
+
+### Lab 6: Catch the Call Scammer (VoIP Call Replay)
+
+In the final lab, I investigated captured VoIP traffic to understand how an insecure phone conversation could expose sensitive information. I examined SIP packets to understand the call setup process and RTP packets to investigate the voice communication.
+
+I also identified the caller's extension, examined the caller information and checked the audio codec used during the call. By investigating the call and listening to the recorded audio, I was able to determine who answered it. The exercise also demonstrated the risks of transmitting sensitive information over unencrypted voice communication.
+
+**Key finding:** Identified SIP and RTP traffic, recognised the PCMU audio codec and learned why Secure Real-time Transport Protocol (SRTP) is important for protecting VoIP calls.
