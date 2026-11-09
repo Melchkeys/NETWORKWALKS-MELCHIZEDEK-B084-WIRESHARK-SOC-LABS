@@ -44,3 +44,11 @@ The main objectives of these practical labs were to:
 - **HTTPS:** Studied as a secure alternative to unencrypted HTTP communication.
 - **SRTP:** Explored as a security solution for encrypting VoIP audio traffic.
 - **Network Traffic Analysis:** Applied packet inspection and protocol analysis to identify suspicious activities and potential security threats.
+
+## 🔍 Practical Labs and Activities
+
+I worked through six hands-on Wireshark labs, each focusing on a different aspect of network traffic analysis.
+
+During the exercises, I examined captured network traffic, followed TCP streams, investigated different protocols, and looked for signs of suspicious activity.
+
+Below are the six labs I completed and a brief description of what I did in each one.
