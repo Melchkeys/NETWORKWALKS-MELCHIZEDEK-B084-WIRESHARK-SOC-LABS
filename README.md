@@ -134,3 +134,10 @@ I successfully completed all six Wireshark SOC analysis labs, covering a total o
 - Overall Performance: 100%
 
 Completing these exercises gave me valuable hands-on experience in network traffic analysis, attack investigation and identifying security weaknesses using Wireshark.
+
+
+## 📝 Conclusion
+
+Completing these six Wireshark labs was a valuable learning experience. I had the opportunity to work with real packet analysis scenarios, investigate different types of network activity and understand how security threats can be identified through network traffic.
+
+This project has strengthened my practical understanding of network analysis and motivated me to continue developing my skills in cybersecurity and security operations.
