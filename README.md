@@ -25,3 +25,22 @@ The main objectives of these practical labs were to:
 - Understand voice codecs and how voice traffic can be examined during an investigation.
 - Identify network security weaknesses and recommend appropriate countermeasures, including HTTPS and SRTP encryption.
 - Develop practical skills in network traffic analysis, threat identification, and security investigation.
+
+
+## 🛠️ Tools and Technologies Used
+
+### 1. Tools
+- **Wireshark:** Used to capture, inspect, filter, and analyse network traffic during the practical investigations.
+- **PCAP Files:** Packet capture files used as the source of network traffic for the six lab exercises.
+
+### 2. Network Protocols Analysed
+- **TCP:** Examined network communication sessions and followed TCP streams to reconstruct conversations.
+- **HTTP:** Investigated web traffic and examined information transmitted in plain text.
+- **FTP:** Analysed file transfer traffic and authentication attempts.
+- **SIP:** Examined VoIP call signalling and call setup.
+- **RTP:** Investigated the transmission of voice data during VoIP communication.
+
+### 3. Security Concepts Explored
+- **HTTPS:** Studied as a secure alternative to unencrypted HTTP communication.
+- **SRTP:** Explored as a security solution for encrypting VoIP audio traffic.
+- **Network Traffic Analysis:** Applied packet inspection and protocol analysis to identify suspicious activities and potential security threats.
