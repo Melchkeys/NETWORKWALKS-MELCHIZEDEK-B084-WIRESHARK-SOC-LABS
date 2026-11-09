@@ -103,3 +103,20 @@ In the final lab, I investigated captured VoIP traffic to understand how an inse
 I also identified the caller's extension, examined the caller information and checked the audio codec used during the call. By investigating the call and listening to the recorded audio, I was able to determine who answered it. The exercise also demonstrated the risks of transmitting sensitive information over unencrypted voice communication.
 
 **Key finding:** Identified SIP and RTP traffic, recognised the PCMU audio codec and learned why Secure Real-time Transport Protocol (SRTP) is important for protecting VoIP calls.
+
+
+
+
+## 🎓 Skills and Knowledge Gained
+
+Completing these labs helped me develop practical skills in:
+
+- Network packet inspection and traffic analysis using Wireshark.
+- Identifying suspicious IP addresses, ports and network activities.
+- Reconstructing TCP conversations using Follow TCP Stream.
+- Investigating HTTP requests and exposed credentials.
+- Recognising FTP brute-force attacks through authentication patterns.
+- Analysing VoIP communication using SIP and RTP.
+- Understanding network security risks and appropriate security measures.
+
+These exercises improved my understanding of how network traffic can be investigated to detect and analyse potential security threats.
