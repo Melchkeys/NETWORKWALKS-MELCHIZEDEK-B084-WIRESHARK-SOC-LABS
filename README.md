@@ -58,6 +58,8 @@ Below are the six labs I completed and a brief description of what I did in each
 
 ### Lab 1: Identify the Attacker's IP
 
+**Screenshot Evidence:** [View Lab 1 Screenshots](screenshots/Wireshark-SOC-Labs/Lab-1-Identify-the-Attackers-IP/)
+
 I started by examining a packet capture containing suspicious network activity. I checked the total number of packets, identified SYN packets and examined the source and destination IP addresses to determine which system was initiating the connections.
 
 I then investigated TCP conversations, checked the ports being accessed and examined TCP flags to distinguish open ports from closed ones. From the analysis, I identified the attacker, the target system and the port-scanning activity taking place.
@@ -65,6 +67,8 @@ I then investigated TCP conversations, checked the ports being accessed and exam
 **Key finding:** Identified the attacker as `192.168.10.66`, the target as `192.168.10.20`, and recognised the activity as a port scan.
 
 ### Lab 2: Follow TCP Stream 1
+
+**Screenshot Evidence:** [View Lab 2 Screenshots](screenshots/Wireshark-SOC-Labs/Lab-2-Follow-TCP-Stream-1/)
 
 In this exercise, I investigated a captured TCP conversation using Wireshark's Follow TCP Stream feature. I examined the communication between the client and server to reconstruct the exchanged messages.
 
@@ -74,6 +78,8 @@ By following the stream, I was able to identify the client IP address, TCP strea
 
 ### Lab 3: Follow TCP Stream, Part 2
 
+**Screenshot Evidence:** [View Lab 3 Screenshots](screenshots/Wireshark-SOC-Labs/Lab-3-Follow-TCP-Stream-Part-2/)
+
 This lab involved a deeper investigation of TCP communication. I used Follow TCP Stream to examine captured traffic and uncover information that was not immediately visible in the packet list.
 
 I investigated a hidden webpage, examined an HTML comment, identified the relevant TCP stream and inspected HTTP responses. I also checked the traffic direction and HTTP status code to understand how the server responded to the client's request.
@@ -81,6 +87,8 @@ I investigated a hidden webpage, examined an HTML comment, identified the releva
 **Key finding:** Successfully identified a hidden staff webpage, examined its HTTP response and located a downloaded report within the captured traffic.
 
 ### Lab 4: HTTP Plain Text Credentials
+
+**Screenshot Evidence:** [View Lab 4 Screenshots](screenshots/Wireshark-SOC-Labs/Lab-4-HTTP-Plain-Text-Credentials/)
 
 For this lab, I examined HTTP traffic to investigate how login information can be exposed during network communication. I identified the HTTP protocol, located POST requests and examined the login page and authentication attempts.
 
@@ -90,6 +98,8 @@ I also inspected the packet details to understand how form data was transmitted.
 
 ### Lab 5: Catch the Brute Force Attacker
 
+**Screenshot Evidence:** [View Lab 5 Screenshots](screenshots/Wireshark-SOC-Labs/Lab-5-Catch-the-Brute-Force-Attacker/)
+
 In this exercise, I investigated FTP traffic to identify a suspected brute-force attack. I examined the communication between the attacker and target system, identified the username being targeted and checked the FTP response codes.
 
 I distinguished failed login attempts from successful authentication and counted the repeated failures. This helped me understand how brute-force activity can be detected by analysing authentication patterns in network traffic.
@@ -97,6 +107,8 @@ I distinguished failed login attempts from successful authentication and counted
 **Key finding:** Identified 24 failed login attempts, recognised FTP response codes `530` and `230`, and confirmed the activity as a brute-force attack.
 
 ### Lab 6: Catch the Call Scammer (VoIP Call Replay)
+
+**Screenshot Evidence:** [View Lab 6 Screenshots](screenshots/Wireshark-SOC-Labs/Lab-6-Catch-the-Call-Scammer/)
 
 In the final lab, I investigated captured VoIP traffic to understand how an insecure phone conversation could expose sensitive information. I examined SIP packets to understand the call setup process and RTP packets to investigate the voice communication.
 
@@ -124,6 +136,8 @@ These exercises improved my understanding of how network traffic can be investig
 
 
 ## 🏆 Project Results and Completion
+
+**Completion Evidence:** [View All Six Lab Results](screenshots/Wireshark-SOC-Labs/Lab-Completion-Results/)
 
 I successfully completed all six Wireshark SOC analysis labs, covering a total of 60 practical tasks.
 
