@@ -120,3 +120,17 @@ Completing these labs helped me develop practical skills in:
 - Understanding network security risks and appropriate security measures.
 
 These exercises improved my understanding of how network traffic can be investigated to detect and analyse potential security threats.
+
+
+
+## 🏆 Project Results and Completion
+
+I successfully completed all six Wireshark SOC analysis labs, covering a total of 60 practical tasks.
+
+**Final Results:**
+- Labs Completed: 6/6
+- Tasks Completed: 60/60
+- Total Score: 600/600
+- Overall Performance: 100%
+
+Completing these exercises gave me valuable hands-on experience in network traffic analysis, attack investigation and identifying security weaknesses using Wireshark.
